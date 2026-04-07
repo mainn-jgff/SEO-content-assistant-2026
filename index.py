@@ -7,8 +7,7 @@ from flask_cors import CORS
 from dotenv import load_dotenv
 
 # Đảm bảo Python tìm thấy agent.py trong cùng thư mục api/
-sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-import agent
+from api import agent
 
 load_dotenv()
 
